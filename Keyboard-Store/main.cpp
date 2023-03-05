@@ -8,7 +8,8 @@ int main()
     Price,
     op,
     year,
-    total;
+    total,
+    a;
 
     cout << "[1] keyboard China : 3000$\n";
     cout << "[2] keyboard Custom : 5000$\n";
@@ -42,4 +43,8 @@ int main()
     total = Price - discound;
     cout << "VaT : " << total * 0.15 << "$\n";
     cout << "Total Price is : " << total + total * 0.15 << "$\n";
-}
+    cout << "Press any key to exit .. ";
+    cin >> a;
+    return 0;
+
+} 
